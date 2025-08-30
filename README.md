@@ -2,6 +2,8 @@
 
 A serverless URL shortening service built with AWS Lambda, API Gateway, and DynamoDB, **optimized for AWS Free Tier usage**.
 
+![URL Shortener Demo](resources/demo-whole-application.png)
+
 ## 🆓 **AWS Free Tier Features**
 
 - **Lambda**: 1 million free requests per month
@@ -55,10 +57,14 @@ curl -X POST https://your-api-id.execute-api.region.amazonaws.com/dev/shorten \
 }
 ```
 
+![URL Shortener Create](resources/url-shortener-create.png)
+
 ### 2. **Redirect URL**
 - **Method**: `GET`
 - **Path**: `/redirect/{shortCode}`
 - **Response**: HTTP 302 redirect to original URL
+
+![URL Get Long URL](resources/url-get-long-url.png)
 
 ### 3. **URL Statistics**
 - **Method**: `GET`
@@ -103,6 +109,15 @@ curl -X POST https://your-api-id.execute-api.region.amazonaws.com/dev/shorten \
                     │   (Storage)  │    │ (Fallback)  │
                     └──────────────┘    └─────────────┘
 ```
+
+### **AWS Lambda Functions**
+![Lambda Functions](resources/lambda-functions.png)
+
+### **DynamoDB Database**
+![DynamoDB](resources/dynamodb.png)
+
+### **API Gateway Configuration**
+![API Gateway](resources/api-gateway.png)
 
 ## 📊 **Free Tier Usage Monitoring**
 
