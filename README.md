@@ -114,7 +114,7 @@ curl -X POST https://your-api-id.execute-api.region.amazonaws.com/dev/shorten \
 ![Lambda Functions](resources/img_2.png)
 
 ### **DynamoDB Database**
-![DynamoDB](resources/dimg_1.png)
+![DynamoDB](resources/img_1.png)
 
 ### **API Gateway Configuration**
 ![API Gateway](resources/img_5.png)
